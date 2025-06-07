@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDisplayName</key>
+    <string>Tankpreise</string>
+
+    <!-- Standort-Berechtigungen -->
+    <key>NSLocationWhenInUseUsageDescription</key>
+    <string>Die App benötigt deinen Standort, um Tankstellen in deiner Nähe zu finden.</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>Die App benötigt deinen Standort, um Tankstellen in deiner Nähe zu finden – auch wenn du sie nicht aktiv nutzt.</string>
+    <key>NSLocationAlwaysUsageDescription</key>
+    <string>Die App benötigt deinen Standort, um Tankstellen in deiner Nähe zu finden – auch im Hintergrund.</string>
+
+    <!-- App Transport Security -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <false/>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>tankerkoenig.de</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+
+    <!-- Interface & Ausrichtung -->
+    <key>UIStatusBarStyle</key>
+    <string>UIStatusBarStyleLightContent</string>
+    <key>UISupportedInterfaceOrientations~iphone</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+    </array>
+    <key>UISupportedInterfaceOrientations~ipad</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+</dict>
+</plist>
